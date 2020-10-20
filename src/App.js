@@ -18,7 +18,7 @@ class App extends Component {
 
   componentDidMount() {
     this.getQuote();
-    document.body.addEventListener("keypress", (e) => {
+    document.body.addEventListener("keyup", (e) => {
       e.keyCode === 13 && this.getQuote();
     });
   }
